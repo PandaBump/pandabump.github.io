@@ -68,7 +68,7 @@ img {
     border-radius: 8px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
     height: 340px; /* Sets the height of all images */
-    display: block; /* By specifying block display we can ensure our images are able to be centered */
+    display: flex; /* By specifying block display we can ensure our images are able to be centered */
     margin-left: auto; /* In combination with "margin-right: auto" this centers all images */
     margin-right: auto;
 }
@@ -198,11 +198,23 @@ footer {
 
 .Column_1 {
     float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.55%;
+    height: 400px;
+    background-color: #4d4d4d;
+    border-bottom: solid 1px #444343;
+    border-right: solid 2px #444343;
+}
+
+.Column_2 {
+    float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 10px;
     padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
     height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
     background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
+    border-bottom: solid 1px #444343;
 }
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
@@ -212,18 +224,10 @@ footer {
     }
 }
 
-.Column_2 {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    padding-top: 1.9%;
-    height: 400px;
-    background-color: #4d4d4d;
-}
 
 /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
 .Column_tall {
-    padding-top: 3.5%;
+    padding-top: 2.75%;
     height: 450px;
 }
 
